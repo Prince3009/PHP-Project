@@ -220,7 +220,7 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`StudentRegno`, `studentPhoto`, `password`, `studentName`, `pincode`, `session`, `department`, `semester`, `cgpa`, `creationdate`, `updationDate`) VALUES
-('10806121', '', 'f925916e2754e5e03f75dd58a5733251', 'Anuj kumar', '822894', NULL, NULL, NULL, 7.10, '2024-02-11 00:53:31', NULL);
+('10806121', '', 'f925916e2754e5e03f75dd58a5733251', 'Prince kumar', '822894', NULL, NULL, NULL, 7.10, 'date("Y-m-d H:i:s")', NULL);
 
 -- --------------------------------------------------------
 
