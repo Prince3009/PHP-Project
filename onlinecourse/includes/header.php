@@ -13,7 +13,7 @@ error_reporting(0);
                     
 
 
-                    <strong>Last Login:<?php 
+                    <strong>Last Login  <?php 
         $ret=mysqli_query($con,"SELECT  * from userlog where studentRegno='".$_SESSION['login']."' order by id desc limit 1,1");
                     $row=mysqli_fetch_array($ret);
                     echo $row['userip']; ?> at <?php echo $row['loginTime'];?></strong>

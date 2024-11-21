@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `creationDate`, `updationDate`) VALUES
-(1, 'admin', 'f925916e2754e5e03f75dd58a5733251', '2024-03-10 16:21:18', '2024-04-25 05:46:53');
+(1, 'admin', 'f925916e2754e5e03f75dd58a5733251', 'date("Y-m-d H:i:s")', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -63,8 +63,8 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`id`, `courseCode`, `courseName`, `courseUnit`, `noofSeats`, `creationDate`, `updationDate`) VALUES
-(1, 'PHP01', 'PHP', '5', 10, '2024-02-10 17:23:28', NULL),
-(2, 'C001', 'C++', '12', 25, '2024-02-11 00:52:46', '11-02-2022 06:23:06 AM');
+(1, 'PHP01', 'PHP', '5', 10, 'date("Y-m-d H:i:s")', NULL),
+(2, 'C001', 'C++', '12', 25, 'date("Y-m-d H:i:s")', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -89,8 +89,8 @@ CREATE TABLE `courseenrolls` (
 --
 
 INSERT INTO `courseenrolls` (`id`, `studentRegno`, `pincode`, `session`, `department`, `level`, `semester`, `course`, `enrollDate`) VALUES
-(1, '10806121', '822894', 1, 1, 2, 3, 1, '2024-02-11 00:59:33'),
-(2, '10806121', '822894', 1, 1, 1, 2, 2, '2024-02-11 01:01:07');
+(1, '10806121', '822894', 1, 1, 2, 3, 1, 'date("Y-m-d H:i:s")'),
+(2, '10806121', '822894', 1, 1, 1, 2, 2, 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -109,8 +109,8 @@ CREATE TABLE `department` (
 --
 
 INSERT INTO `department` (`id`, `department`, `creationDate`) VALUES
-(1, 'IT', '2024-02-10 17:23:04'),
-(2, 'HR', '2024-02-10 17:23:09');
+(1, 'IT', 'date("Y-m-d H:i:s")'),
+(2, 'HR', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -129,9 +129,9 @@ CREATE TABLE `level` (
 --
 
 INSERT INTO `level` (`id`, `level`, `creationDate`) VALUES
-(1, '1', '2024-02-11 00:59:02'),
-(2, '2', '2024-02-11 00:59:02'),
-(3, '3', '2024-02-11 00:59:09');
+(1, '1', 'date("Y-m-d H:i:s")'),
+(2, '2', 'date("Y-m-d H:i:s")'),
+(3, '3', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -151,8 +151,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `newstitle`, `newsDescription`, `postingDate`) VALUES
-(2, 'Test News', 'This is for testing. This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.', '2024-02-10 17:36:50'),
-(3, 'New Course Started C#', 'This is sample text for testing.', '2024-02-11 00:54:38');
+(2, 'Test News', 'This is for testing. This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.This is for testing.', 'date("Y-m-d H:i:s")'),
+(3, 'New Course Started C#', 'This is sample text for testing.', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -172,9 +172,9 @@ CREATE TABLE `semester` (
 --
 
 INSERT INTO `semester` (`id`, `semester`, `creationDate`, `updationDate`) VALUES
-(1, '1', '2024-02-10 17:22:49', NULL),
-(2, '2', '2024-02-10 17:22:55', NULL),
-(3, '3', '2024-02-11 00:51:43', NULL);
+(1, '1', 'date("Y-m-d H:i:s")', NULL),
+(2, '2', 'date("Y-m-d H:i:s")', NULL),
+(3, '3', 'date("Y-m-d H:i:s")', NULL);
 
 -- --------------------------------------------------------
 
@@ -193,7 +193,7 @@ CREATE TABLE `session` (
 --
 
 INSERT INTO `session` (`id`, `session`, `creationDate`) VALUES
-(1, '2024', '2024-02-10 17:10:59');
+(1, '2024', 'date("Y-m-d H:i:s")');
 
 -- --------------------------------------------------------
 
@@ -242,9 +242,9 @@ CREATE TABLE `userlog` (
 --
 
 INSERT INTO `userlog` (`id`, `studentRegno`, `userip`, `loginTime`, `logout`, `status`) VALUES
-(1, '10806121', 0x3a3a3100000000000000000000000000, '2024-02-11 00:55:07', NULL, 1),
-(2, '10806121', 0x3a3a3100000000000000000000000000, '2024-02-11 00:57:00', NULL, 1),
-(3, '10806121', 0x3a3a3100000000000000000000000000, '2024-02-11 00:57:22', '11-02-2024 06:31:26 AM', 1);
+(1, '10806121', 0x3a3a3100000000000000000000000000, 'date("Y-m-d H:i:s")', NULL, 1),
+(2, '10806121', 0x3a3a3100000000000000000000000000, 'date("Y-m-d H:i:s")', NULL, 1),
+(3, '10806121', 0x3a3a3100000000000000000000000000, 'date("Y-m-d H:i:s")', 'date("Y-m-d H:i:s")', 1);
 
 --
 -- Indexes for dumped tables
